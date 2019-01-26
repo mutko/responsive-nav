@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.page-header {
+    position: relative;
+    background: #f0f0f0;
+    padding: 20px 0;
+}
+.logo {
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 2rem;
+    color: #000;
+}
+.hamb-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.hamb-btn-bar {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #000;
+    margin: 7px 0;
+}
+.hamb-btn:hover .hamb-btn-bar {
+    background: #24b3a3;
+}
+.nav-list {
+    background: #2b2b2b;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: none;
+}
+.nav-list > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #fff;
+    display: inline-block;
+    padding: 20px; /* for clickable area around links */
+    margin: 5px 0; /* for space between links */
+}
+.nav-list > li > a:hover {
+    color: #24b3a3;
+}
+.active {
+    display: block;
+}
+@media all and (min-width: 40em) {
+    .page-header {
+        padding: 0;
+        background: #2b2b2b;
+    }
+    .page-nav {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        color: #f0f0f0;
+    }   
+    .logo:hover {
+        color: #24b3a3;
+    }   
+    .hamb-btn {
+        display: none;
+    }
+    .nav-list {
+        margin: 0;
+        margin-left: auto;
+        display: flex;
+    }
+}
