@@ -39,7 +39,7 @@ html, body {
 }
 .nav-list > li > a {
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1.3px;
     color: #fff;
     display: inline-block;
