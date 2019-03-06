@@ -5,15 +5,18 @@ html, body {
 }
 .page-header {
     position: relative;
-    background: #0f0f0f;
+    background: #2b2b2b;
     padding: 20px 0;
 }
 .logo {
     text-decoration: none;
     padding-left: 20px;
     font-size: 2rem;
-    color: #000;
-}
+    color: #f0f0f0;
+} 
+.logo:hover {
+    color: #24b3a3;
+}   
 .hamb-btn {
     cursor: pointer;
     position: absolute;
@@ -24,7 +27,7 @@ html, body {
     display: block;
     width: 40px;
     height: 5px;
-    background: #000;
+    background: #f0f0f0;
     margin: 7px 0;
 }
 .hamb-btn:hover .hamb-btn-bar {
@@ -39,7 +42,7 @@ html, body {
 }
 .nav-list > li > a {
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 1.3px;
     color: #fff;
     display: inline-block;
@@ -55,18 +58,11 @@ html, body {
 @media all and (min-width: 40em) {
     .page-header {
         padding: 0;
-        background: #2b2b2b;
     }
     .page-nav {
         display: flex;
         align-items: center;
     }
-    .logo {
-        color: #f0f0f0;
-    }   
-    .logo:hover {
-        color: #24b3a3;
-    }   
     .hamb-btn {
         display: none;
     }
